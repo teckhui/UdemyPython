@@ -1,4 +1,4 @@
-def banner_text(text):
+def banner_text(text=" "):
     screen_width = 10
     if len(text) > screen_width - 4:
         raise ValueError("String {0} is larger than specified width {1}".format(text, screen_width))
@@ -13,5 +13,6 @@ def banner_text(text):
 banner_text("*")
 banner_text("test")
 banner_text(" ")
+banner_text()
 banner_text("testtesttesttesttest")
 banner_text("*")
